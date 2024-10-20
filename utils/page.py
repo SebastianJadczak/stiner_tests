@@ -1,17 +1,30 @@
+from selenium.webdriver.chrome.webdriver import WebDriver
+
 from utils.locator import Locator
 
 
 class Page:
     PAGE_NAME = ...
 
-    def __init__(self, driver):
+    def __init__(self, driver: WebDriver):
         self.__driver = driver
 
     def find_element(self, locator: Locator):
         self.__driver.find_element(locator.by, locator.value)
 
-    def send_keys(self, locator: Locator, data):
+    def send_keys(self, locator: Locator, data: str):
         self.__driver.find_element(locator.by, locator.value).send_keys(data)
 
     def get(self, url: str):
         self.__driver.get(url)
+
+    def click(self, locator: Locator):
+        self.__driver.find_element(locator.by, locator.value).click()
+
+    def clear_and_send_keys(self, locator: Locator, data: str):
+        el = self.__driver.find_element(locator.by, locator.value)
+        el.clear()
+        el.send_keys(data)
+
+    def is_selected(self, locator: Locator) -> bool:
+        return self.__driver.find_element(locator.by, locator.value).is_selected()
