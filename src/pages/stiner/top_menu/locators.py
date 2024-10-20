@@ -3,12 +3,13 @@ from utils.locator import Locator
 
 
 class MenuLocators:
+    MAIN_SITE_IMG = Locator.xpath('//div[@id="logo_in_first_section"]//a')
     LOGIN_REGISTER_BUTTON = Locator.from_id('button_login_in_first_menu')
     EXPLORE_BUTTON = Locator.from_id('awarded_in_first_menu')
     MAP_LINK = Locator.xpath('//a[text()="Mapa"]')
     BLOG_LINK = Locator.xpath('//a[text()="Blog"]')
     CONTACT_LINK = Locator.xpath('//a[text()="Kontakt"]')
-    EXPLORE_ELEMENT_LIST = Locator.from_id('sightseeing_in_second_menu')
+    VISIT_ELEMENT_LIST = Locator.from_id('sightseeing_in_second_menu')
 
     # submenu
 
