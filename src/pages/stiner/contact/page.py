@@ -1,7 +1,7 @@
 from allure import step
 
 from src.pages.stiner.common.enums import PageName
-from src.pages.stiner.contact.data import ContactPageData, ContactFormData
+from src.pages.stiner.contact.data import ContactFormData, ContactData
 from src.pages.stiner.contact.locators import ContactLocators
 from utils.page import Page
 
@@ -14,7 +14,7 @@ class ContactPage(Page):
         return ContactLocators()
 
     @step(f'Wypełnij page {PAGE_NAME}')
-    def fill(self, data: ContactPageData):
+    def fill(self, data: ContactData):
         self.__fill_contact_form(data.contact_form)
 
     @step('Wypełnij formularz kontaktowy')
