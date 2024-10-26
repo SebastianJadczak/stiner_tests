@@ -1,12 +1,13 @@
 from allure import step
 
+from src.pages.stiner.common.enums import PageName
 from src.pages.stiner.contact.data import ContactPageData, ContactFormData
 from src.pages.stiner.contact.locators import ContactLocators
 from utils.page import Page
 
 
 class ContactPage(Page):
-    PAGE_NAME = ''
+    PAGE_NAME = PageName.CONTACT
 
     @property
     def locators(self) -> ContactLocators:
