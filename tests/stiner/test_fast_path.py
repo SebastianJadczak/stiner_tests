@@ -2,7 +2,7 @@ from pathlib import PurePath
 import pytest as pytest
 from selenium.webdriver.chrome.options import Options
 
-from src.pages.stiner.main_site.data import StinerData
+from src.pages.stiner.data import StinerData
 from src.pages.stiner.trails.data import TrailsData
 from src.paths import Paths
 from tests.stiner.common_path import CommonPath
