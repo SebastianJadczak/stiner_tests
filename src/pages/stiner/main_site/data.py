@@ -1,18 +1,14 @@
 from dataclasses import dataclass
+from typing import Optional
 
 
 @dataclass
-class StinerData:
-    field_first: str
-
-
-@dataclass
-class Newsletter:
+class NewsletterData:
     email: str
 
 
 @dataclass
-class Trails:
+class TrailsData:
     name_trail: str
     country: str
     city: str
@@ -20,6 +16,6 @@ class Trails:
 
 
 @dataclass
-class MainPage:
-    newsletter: Newsletter
-    trails: Trails
+class MainSiteData:
+    newsletter: Optional[NewsletterData] = None
+    trails: Optional[TrailsData] = None
