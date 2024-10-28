@@ -25,4 +25,7 @@ class MainSitePage(Page):
 
     @step('Wypełnij formularz "Szukania trasy"')
     def __fill_search_trail_form(self, data: TrailsData):
-        ...
+        self.send_keys(self.locators.NAME_TRAIL_INPUT, data.name_trail)
+        self.select(self.locators.COUNTRY_SELECT, data.country)
+        self.select(self.locators.CITY_SELECT, data.city)
+        self.click(self.locators.SEARCH_BUTTON)
