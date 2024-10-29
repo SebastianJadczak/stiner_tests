@@ -1,4 +1,5 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium.webdriver.support.select import Select
 
 from utils.locator import Locator
 
@@ -28,3 +29,7 @@ class Page:
 
     def is_selected(self, locator: Locator) -> bool:
         return self.__driver.find_element(locator.by, locator.value).is_selected()
+
+    def select(self, locator: Locator, value: str):
+        select = Select(self.__driver.find_element(locator.by, locator.value))
+        select.select_by_value(value)
