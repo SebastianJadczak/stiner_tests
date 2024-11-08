@@ -7,3 +7,8 @@ class PageName(StrEnum):
     TRAILS = 'Trasy'
     LOGIN = 'Logowanie'
     REGISTER = 'Rejestracja'
+    YOURS_TRAILS = 'Twoje trasy'
+    FAVORITE = 'Ulubione'
+    NOTIFICATION = 'Powiadomienia'
+    PROFILE_USER = 'Profil użytkownika'
+    CHANGE_PASSWORD = 'Zmień hasło'
