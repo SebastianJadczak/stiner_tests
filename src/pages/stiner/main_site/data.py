@@ -16,6 +16,6 @@ class TrailsData:
 
 
 @dataclass
-class MainSiteData:
+class MainSitePageData:
     newsletter: Optional[NewsletterData] = None
     trails: Optional[TrailsData] = None
