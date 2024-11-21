@@ -1,3 +1,10 @@
 {
-  "field_first": "123"
+  "main_page": {
+    "trails": {
+      "name_trail": "Testowa",
+      "country": "Polska",
+      "city": "Warszawa",
+      "popular": false
+    }
+  }
 }
