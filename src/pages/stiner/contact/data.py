@@ -10,5 +10,5 @@ class ContactFormData:
 
 
 @dataclass
-class ContactData:
+class ContactPageData:
     contact_form: ContactFormData
