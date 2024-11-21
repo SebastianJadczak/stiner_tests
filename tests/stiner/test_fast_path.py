@@ -3,7 +3,7 @@ import pytest as pytest
 from selenium.webdriver.chrome.options import Options
 
 from src.pages.stiner.data import StinerData
-from src.pages.stiner.trails.data import TrailsData
+from src.pages.stiner.trails.data import TrailsPageData
 from src.paths import Paths
 from tests.stiner.common_path import CommonPath
 from utils.env import CI_CD_env, CI_CD
@@ -24,7 +24,7 @@ def data_01_fast():
 
 @pytest.fixture
 def data_02_fast():
-    return get_test_data_from_json(TrailsData, get_path_to_test_data('data_02_fast'))
+    return get_test_data_from_json(TrailsPageData, get_path_to_test_data('data_02_fast'))
 
 
 class TestFastPath:
