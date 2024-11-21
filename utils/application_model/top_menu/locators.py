@@ -1,4 +1,4 @@
-from src.pages.stiner.top_menu.data import ExploreSubmenu, WorldSubmenu
+from utils.application_model.top_menu.enums import ExploreSubmenu, WorldSubmenu
 from utils.locator import Locator
 
 

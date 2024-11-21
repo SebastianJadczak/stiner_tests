@@ -11,7 +11,7 @@ class TopMenu(StrEnum):
     LOGIN_REGISTER = 'Zarejestruj się | Zaloguj'
 
 
-class VisitAbstract(ABC, StrEnum):
+class VisitAbstract(StrEnum):
     ...
 
 
