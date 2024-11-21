@@ -8,5 +8,5 @@ class SearchData:
 
 
 @dataclass
-class TrailsData:
+class TrailsPageData:
     search: SearchData

@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class RegisterData:
+class RegisterPageData:
     username: str
     password: str
     email: str
