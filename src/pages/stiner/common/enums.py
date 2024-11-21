@@ -12,3 +12,17 @@ class PageName(StrEnum):
     NOTIFICATION = 'Powiadomienia'
     PROFILE_USER = 'Profil użytkownika'
     CHANGE_PASSWORD = 'Zmień hasło'
+
+
+class Country(StrEnum):
+    POLAND = 'Polska'
+    GERMANY = 'Niemcy'
+    CZECH_REPUBLIC = 'Czechy'
+    SLOVAKIA = 'Słowacja'
+    RUSSIA = 'Rosja'
+    UKRAINE = 'Ukraina'
+    BELARUS = 'Białoruś'
+    LITHUANIA = 'Litwa'
+    ESTONIA = 'Estonia'
+    ITALY = 'Włochy'
+    ISRAEL = 'Izrael'
