@@ -1,11 +1,9 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.support.select import Select
-
 from utils.locator import Locator
 
 
-class Page:
-    PAGE_NAME = ...
+class Actions:
 
     def __init__(self, driver: WebDriver):
         self.__driver = driver
