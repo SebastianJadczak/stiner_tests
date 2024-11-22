@@ -2,10 +2,10 @@ from dataclasses import dataclass
 from typing import Optional
 
 from src.pages.stiner.contact.data import ContactPageData
+from src.pages.stiner.explore.trails.data import TrailsPageData
 from src.pages.stiner.login.data import LoginPageData
 from src.pages.stiner.main_site.data import MainSitePageData
 from src.pages.stiner.register.data import RegisterPageData
-from src.pages.stiner.trails.data import TrailsPageData
 
 
 @dataclass

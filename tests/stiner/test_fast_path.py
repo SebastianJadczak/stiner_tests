@@ -3,7 +3,7 @@ import pytest as pytest
 from selenium.webdriver.chrome.options import Options
 
 from src.pages.stiner.data import StinerData
-from src.pages.stiner.trails.data import TrailsPageData
+from src.pages.stiner.explore.trails.data import TrailsPageData
 from src.paths import Paths
 from tests.stiner.common_path import CommonPath
 from utils.env import CI_CD_env, CI_CD
