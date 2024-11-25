@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import Optional
 
 from src.pages.stiner.contact.data import ContactPageData
+from src.pages.stiner.explore.attractions.data import AttractionPageData
 from src.pages.stiner.explore.trails.data import TrailsPageData
 from src.pages.stiner.login.data import LoginPageData
 from src.pages.stiner.main_site.data import MainSitePageData
@@ -15,3 +16,4 @@ class StinerData:
     contact_page: Optional[ContactPageData] = None
     login_page: Optional[LoginPageData] = None
     register_page: Optional[RegisterPageData] = None
+    attraction_page: Optional[AttractionPageData] = None
