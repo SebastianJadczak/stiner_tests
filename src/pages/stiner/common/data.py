@@ -1,13 +1,7 @@
 from dataclasses import dataclass
-from enum import StrEnum
 from typing import Optional
 
-from src.pages.stiner.common.enums import Country
-
-
-class SortType(StrEnum):
-    VISITORS = 'Zwiedzających'
-    EVALUATION = 'Ocena'
+from src.pages.stiner.common.enums import Country, SortType
 
 
 @dataclass
