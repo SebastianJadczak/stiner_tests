@@ -26,3 +26,9 @@ class Country(StrEnum):
     ESTONIA = 'Estonia'
     ITALY = 'Włochy'
     ISRAEL = 'Izrael'
+
+
+class SortType(StrEnum):
+    VISITORS = 'Zwiedzających'
+    EVALUATION = 'Ocena'
+
