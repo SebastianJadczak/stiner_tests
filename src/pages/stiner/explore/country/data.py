@@ -1,5 +1,11 @@
 from dataclasses import dataclass
+from enum import StrEnum
 from typing import Optional
+
+
+class ActionAddForButtons(StrEnum):
+    add_to_favorite = 'Dodaj do ulubionych'
+    add_to_visited = 'Dodaj do zwiedzonych'
 
 
 @dataclass
@@ -8,9 +14,15 @@ class ExchangeRatesSectionData:
 
 
 @dataclass
+class ActionData:
+    add: Optional[ActionAddForButtons] = None
+    remove: Optional[bool] = None
+
+
+@dataclass
 class CountryPageData:
     is_download_guide = bool
     is_heartbeat_guide = bool
-    whether_to_add_to_visited = bool
-    whether_to_add_to_favorite = bool
+    visited = ActionData
+    favorite = ActionData
     exchange_rates_section = Optional[ExchangeRatesSectionData]
