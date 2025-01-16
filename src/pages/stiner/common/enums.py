@@ -12,6 +12,7 @@ class PageName(StrEnum):
     NOTIFICATION = 'Powiadomienia'
     PROFILE_USER = 'Profil użytkownika'
     CHANGE_PASSWORD = 'Zmień hasło'
+    COUNTRY = 'Kraj'
 
 
 class Country(StrEnum):
