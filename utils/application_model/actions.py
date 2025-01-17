@@ -11,7 +11,7 @@ class Actions:
     def find_element(self, locator: Locator):
         self.__driver.find_element(locator.by, locator.value)
 
-    def send_keys(self, locator: Locator, data: str):
+    def send_keys(self, locator: Locator, data: str | float | int):
         self.__driver.find_element(locator.by, locator.value).send_keys(data)
 
     def get(self, url: str):
