@@ -9,6 +9,7 @@ class CommonPath:
         self.client = self.flow.client
 
     def test_fast_path(self, data: StinerData):
+        self.client.open_site()
         self.client.main_site_page.fill(data.main_page)
 
 
