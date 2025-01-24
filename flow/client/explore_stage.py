@@ -1,4 +1,5 @@
-from flow.stage import Stage
+from test_library.src.flow.stage import Stage
+
 from src.pages.stiner.explore.attractions.page import AttractionPage
 from src.pages.stiner.explore.country.page import CountryPage
 from src.pages.stiner.explore.trails.page import TrailsPage
