@@ -1,6 +1,5 @@
 from allure import step
-
-from utils.application_model.page import Page
+from test_library.src.pom.page import Page
 
 
 class WorldPage(Page):
