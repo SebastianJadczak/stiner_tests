@@ -1,9 +1,9 @@
 from allure import step
+from test_library.src.pom.page import Page
 
 from src.pages.stiner.common.enums import PageName
 from src.pages.stiner.explore.country.data import CountryPageData, ActionData, ExchangeRatesSectionData
 from src.pages.stiner.explore.country.locators import CountryLocators
-from utils.application_model.page import Page
 
 
 class CountryPage(Page):
