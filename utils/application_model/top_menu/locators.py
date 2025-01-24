@@ -1,5 +1,6 @@
+from test_library.utils.locator import Locator
+
 from utils.application_model.top_menu.enums import ExploreSubmenu, WorldSubmenu
-from utils.locator import Locator
 
 
 class MenuLocators:
