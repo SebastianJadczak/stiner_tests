@@ -1,9 +1,9 @@
 from allure import step
+from test_library.src.pom.page import Page
 
 from src.pages.stiner.common.enums import PageName
 from src.pages.stiner.login.data import LoginPageData
 from src.pages.stiner.login.locators import LoginLocators
-from utils.application_model.page import Page
 
 
 class LoginPage(Page):
