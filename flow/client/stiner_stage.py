@@ -1,5 +1,6 @@
+from test_library.src.flow.stage import MainStage
+
 from flow.client.explore_stage import ExploreStage
-from flow.stage import Stage
 from src.pages.stiner.contact.page import ContactPage
 from src.pages.stiner.login.page import LoginPage
 from src.pages.stiner.main_site.page import MainSitePage
@@ -7,7 +8,10 @@ from src.pages.stiner.register.page import RegisterPage
 from src.pages.stiner.your_trails.page import YourTrailsPage
 
 
-class StinerStage(Stage):
+class StinerStage(MainStage):
+    def open_site(self):
+        self.driver.get('https://sebastianjadczak.usermd.net/')
+
     @property
     def main_site_page(self) -> MainSitePage:
         return MainSitePage(self.driver)
