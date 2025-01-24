@@ -1,9 +1,9 @@
 from allure import step
+from test_library.src.pom.page import Page
 
 from src.pages.stiner.common.enums import PageName
 from src.pages.stiner.explore.trails.data import TrailsPageData
 from src.pages.stiner.explore.trails.locators import TrailsLocators
-from utils.application_model.page import Page
 
 
 class TrailsPage(Page):
