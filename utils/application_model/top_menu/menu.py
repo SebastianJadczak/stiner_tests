@@ -1,5 +1,6 @@
 from allure import step
-from utils.application_model.actions import Actions
+from test_library.src.actions import Actions
+
 from utils.application_model.top_menu.enums import TopMenu, ExploreSubmenu, WorldSubmenu
 from utils.application_model.top_menu.locators import MenuLocators
 
