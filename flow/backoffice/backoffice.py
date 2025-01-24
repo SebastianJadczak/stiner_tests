@@ -1,5 +1,5 @@
-from flow.client.stiner_stage import Stage
+from test_library.src.flow.stage import MainStage
 
 
-class BackofficeStage(Stage):
+class BackofficeStage(MainStage):
     ...
