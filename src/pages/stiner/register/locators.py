@@ -1,4 +1,4 @@
-from utils.locator import Locator
+from test_library.utils.locator import Locator
 
 
 class RegisterLocators:

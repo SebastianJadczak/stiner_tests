@@ -1,5 +1,6 @@
+from test_library.utils.locator import Locator
+
 from src.pages.stiner.explore.country.data import ActionAddForButtons
-from utils.locator import Locator
 
 
 class CountryLocators:
