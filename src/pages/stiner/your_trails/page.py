@@ -1,8 +1,8 @@
 from allure import step
+from test_library.src.pom.page import Page
 
 from src.pages.stiner.common.enums import PageName
 from src.pages.stiner.your_trails.locators import YourTrailsLocators
-from utils.application_model.page import Page
 
 
 class YourTrailsPage(Page):
