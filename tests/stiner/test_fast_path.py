@@ -1,13 +1,13 @@
 from pathlib import PurePath
 import pytest as pytest
 from selenium.webdriver.chrome.options import Options
+from test_library.utils.data_from_json import get_test_data_from_json
 
 from src.pages.stiner.data import StinerData
 from src.pages.stiner.explore.trails.data import TrailsPageData
 from src.paths import Paths
 from tests.stiner.common_path import CommonPath
 from utils.env import CI_CD_env, CI_CD
-from utils.utils import get_test_data_from_json
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
